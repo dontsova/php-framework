@@ -10,4 +10,6 @@ require_once ROOT . '/vendor/autoload.php';
 $app = new \PHPFramework\Application();
 require_once CONFIG . '/routes.php';
 
+// dump($app->request->get('page'));
+
 $app->run();

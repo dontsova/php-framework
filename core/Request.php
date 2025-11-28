@@ -23,4 +23,9 @@ class Request
     {
         return strtoupper($_SERVER['REQUEST_METHOD']);
     }
+
+    public function get($name, $default = null): ?string
+    {
+        return $_GET[$name] ?? $default;
+    }
 }
