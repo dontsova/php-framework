@@ -6,7 +6,7 @@ class ContactController
 {
     public function index()
     {
-        return 'Contact form page';
+        return 'Contact form page from controller';
     }
 
     public function send()
