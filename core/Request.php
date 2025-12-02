@@ -28,4 +28,17 @@ class Request
     {
         return $_GET[$name] ?? $default;
     }
+
+    // i dont use this function
+    public function removeQueryString()
+    {
+        if ($this->uri) {
+            $params = explode('&', $this->uri);
+            dump($param);
+            if (false === \str_contains($params[0], '=')) {
+                return trim($params[0], '/');
+            }
+        }
+        return "";
+    }
 }
